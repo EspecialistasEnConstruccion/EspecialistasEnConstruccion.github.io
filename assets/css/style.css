@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /**
 * Template Name: Gp
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -131,7 +133,7 @@ h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  font-size: 45px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -1550,3 +1552,69 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+.some-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.pure {
+  color: #e75480;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
+  margin-top: 25px;
+}
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
