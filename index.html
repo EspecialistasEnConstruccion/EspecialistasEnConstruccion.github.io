@@ -46,6 +46,31 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+
+    <script type="text/javascript">
+
+        function toServices() {
+            location.href = "#";
+            location.href = "#services";
+        }
+
+        window.onload = function () {
+            var a = document.getElementById("const_hab");
+            var b = document.getElementById("const_dep");
+            var c = document.getElementById("renov");
+            var d = document.getElementById("cabin");
+            var e = document.getElementById("comm");
+            var f = document.getElementById("invest");
+
+            a.onclick = toServices;
+            b.onclick = toServices;
+            c.onclick = toServices;
+            d.onclick = toServices;
+            e.onclick = toServices;
+            f.onclick = toServices;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -92,62 +117,63 @@
     </div>
 </header><!-- End Header -->
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-            <div class="col-xl-6 col-lg-8">
-                <h1 style="font-size: 3em">Construimos Espacios<span>.</span><br>
-                    Construimos Confianza<span>.</span></h1>
-                <br>
-                <h2>Somos un equipo de talentosos Especialistas en Construcción.</h2>
-            </div>
-        </div>
-
-        <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-            <div class="col-xl-2 col-md-4">
-                <div class="icon-box">
-                    <i><span class="material-symbols-outlined">home</span></i>
-                    <h3><a href="">Casa Habitación</a></h3>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-4">
-                <div class="icon-box">
-                    <i><span class="material-symbols-outlined">apartment</span></i>
-                    <h3><a href="">Departamentos</a></h3>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-4">
-                <div class="icon-box">
-                    <i><span class="material-symbols-outlined">imagesearch_roller</span></i>
-                    <h3><a href="">Remodelación</a></h3>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-4">
-                <div class="icon-box">
-                    <i><span class="material-symbols-outlined">cabin</span></i>
-                    <h3><a href="">Cabin</a></h3>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-4">
-                <div class="icon-box">
-                    <i><span class="material-symbols-outlined">store</span></i>
-                    <h3><a href="">Comercial Negocios</a></h3>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-4">
-                <div class="icon-box">
-                    <i><span class="material-symbols-outlined">database</span></i>
-                    <h3><a href="">Proyectos de Inversión</a></h3>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section><!-- End Hero -->
-
 <main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1 style="font-size: 3em">Construimos Espacios<span>.</span><br>
+                        Construimos Confianza<span>.</span></h1>
+                    <br>
+                    <h2>Somos un equipo de talentosos Especialistas en Construcción.</h2>
+                </div>
+            </div>
+
+            <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i><span class="material-symbols-outlined">home</span></i>
+                        <h3><a id="const_hab" href="#pop__const_hab">Casa
+                            Habitación</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i><span class="material-symbols-outlined">apartment</span></i>
+                        <h3><a id="const_dep" href="#pop__const_dep">Departamentos</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i><span class="material-symbols-outlined">imagesearch_roller</span></i>
+                        <h3><a id="renov" href="#pop__renov">Remodelación</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i><span class="material-symbols-outlined">cabin</span></i>
+                        <h3><a id="cabin" href="#pop__cabin">Cabin</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i><span class="material-symbols-outlined">store</span></i>
+                        <h3><a id="comm" href="#pop__cabin">Comercial Negocios</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i><span class="material-symbols-outlined">database</span></i>
+                        <h3><a id="invest" href="#pop__invest">Proyectos de Inversión</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Hero -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -202,7 +228,8 @@
                 <div class="swiper-wrapper align-items-center">
                     <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
                     <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" height="100%" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" height="100%" class="img-fluid"
+                                                   alt=""></div>
                     <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
                     <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
                     <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
@@ -227,7 +254,8 @@
                         <h4>Experiencia</h4>
                         <p>La experiencia es un valor, y en nuestro caso, la lealtad mutua entre nuestro equipo de
                             colaboradores nos convierte en una organización que cuenta con profesionales con más de 20
-                            años de experiencia que con su trabajo diario van sumando experiencia y aumentando la fortaleza
+                            años de experiencia que con su trabajo diario van sumando experiencia y aumentando la
+                            fortaleza
                             en todas nuestras áreas operacionales.
                             <br>
                         </p>
@@ -282,7 +310,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><span class="material-symbols-outlined">home</span></div>
-                        <h4><a href="#popup">Construcción Habitacional</a></h4>
+                        <h4><a href="#pop__const_hab">Construcción Habitacional</a></h4>
                         <p>Calidad que se Ve. Espacios que se Sienten.
                             Transformamos Planos en Hogares.
                         </p>
@@ -293,7 +321,7 @@
                      data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><span class="material-symbols-outlined">apartment</span></div>
-                        <h4><a href="">Construcción Habitacional
+                        <h4><a href="#pop__const_hab">Construcción Habitacional
                             - Departamentos</a></h4>
                         <p>Calidad que se Ve. en Espacios Verticales.
                             Tu Refugio Urbano, Nuestro Compromiso de Calidad.
@@ -305,7 +333,7 @@
                      data-aos-delay="300">
                     <div class="icon-box">
                         <div class="icon"><span class="material-symbols-outlined">imagesearch_roller</span></div>
-                        <h4><a href="">Remodelación Habitacional</a></h4>
+                        <h4><a href="#pop__renov">Remodelación Habitacional</a></h4>
                         <p>Transformando Espacios, Remodelamos para Inspirar.
                             Reimagina, Revive, Renueva tu Vida.
                         </p>
@@ -315,7 +343,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><span class="material-symbols-outlined">cabin</span></div>
-                        <h4><a href="">Cabin</a></h4>
+                        <h4><a href="#pop__cabin">Cabin</a></h4>
                         <p>Tu Espacio en el Bosque, Tu Cabaña Perfecta, Naturaleza en Cada Detalle, Nuestro Arte en
                             Construcción.</p>
                     </div>
@@ -324,7 +352,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><span class="material-symbols-outlined">store</span></div>
-                        <h4><a href="">Comercial</a></h4>
+                        <h4><a href="#pop__cabin">Comercial</a></h4>
                         <p>Espacios Impresionantes. Ambientes que hablan por tu Marca.
                             Construcción y Remodelación para Establecimientos y Negocios Eficientes.
                         </p>
@@ -334,7 +362,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-box">
                         <div class="icon"><span class="material-symbols-outlined">database</span></div>
-                        <h4><a href="">Proyectos de Inversión</a></h4>
+                        <h4><a href="#pop__invest">Proyectos de Inversión</a></h4>
                         <p>Construyendo Oportunidades, Cosechando Inversiones Inmobiliarias de Éxito.
                             Invierte con Visión, Somos tu Opción Más Rentable.
                         </p>
@@ -343,16 +371,6 @@
             </div>
         </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= Modals Section ======= -->
-    <section id="modals">
-        <div class="popup" id="popup">
-            <div class="popup__content">
-
-                <a href="#services" class="button">Close Popup</a>
-            </div>
-        </div>
-    </section><!-- End Modals Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -400,10 +418,12 @@
                         <img src="assets/img/portfolio/construction/ARAGON/01.jpeg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Construcci&oacute;n</h4>
-                            <p>Bosques de Arag&oacute;n 1</p>
+                            <p>Bosques de Arag&oacute;n</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/construction/ARAGON/01.jpeg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="BOSQUES DE ARAG&Oacute;N 1"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/portfolio/construction/ARAGON/01.jpeg"
+                                   data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="BOSQUES DE ARAG&Oacute;N 1"><i
+                                        class="bx bx-plus"></i></a>
                                 <a href="portfolio/construction/BOSQUES.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
@@ -416,12 +436,14 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/construction/STA_LUCIA/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Santa Luc&iacute;a</h4>
-                            <p>Santa Luc&iacute;a 1</p>
+                            <h4>Construcci&oacute;n</h4>
+                            <p>Santa Luc&iacute;a</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/construction/STA_LUCIA/01.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Santa Luc&iacute;a 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio/construction/IZCALLI.html" title="More Details"><i
+                                <a href="assets/img/portfolio/construction/STA_LUCIA/01.jpg"
+                                   data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Santa Luc&iacute;a 1"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="portfolio/construction/SANTA_LUCIA.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -433,10 +455,11 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/construction/IZCALLI/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Izcalli</h4>
-                            <p>Izcalli 1</p>
+                            <h4>Construcci&oacute;n</h4>
+                            <p>Izcalli </p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/construction/IZCALLI/01.jpg" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/construction/IZCALLI/01.jpg"
+                                   data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Izcalli 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio/construction/IZCALLI.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
@@ -450,10 +473,11 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/construction/DEPTOS/01.JPG" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Departamentos</h4>
-                            <p>Departamentos 1</p>
+                            <h4>Construcci&oacute;n</h4>
+                            <p>Departamentos</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/construction/DEPTOS/01.JPG" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/construction/DEPTOS/01.JPG"
+                                   data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Departamentos 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio/construction/DEPARTAMENTOS.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
@@ -472,12 +496,12 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/renovation/BALBINO/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Renovaci&oacute;n 1</h4>
-                            <p>Renovaci&oacute;n</p>
+                            <h4>Renovaci&oacute;n</h4>
+                            <p>Balbino</p>
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/renovation/BALBINO/01.jpg" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Renovaci&oacute;n 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio/investment/INVESTMENT.html" title="More Details"><i
+                                <a href="portfolio/renovation/BALBINO.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -494,7 +518,7 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/cabin/MANTONIEBLA/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Mantoniebla 1</h4>
+                            <h4>Cabin</h4>
                             <p>Mantoniebla</p>
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/cabin/MANTONIEBLA/01.jpg" data-gallery="portfolioGallery"
@@ -516,10 +540,11 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/commercial/CAFE_NUR/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Caf&eacute; Nur 1</h4>
+                            <h4>Comercial</h4>
                             <p>Caf&eacute; Nur</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/commercial/CAFE_NUR/01.jpg" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/commercial/CAFE_NUR/01.jpg"
+                                   data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Caf&eacute; Nur 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio/commercial/CAFE_NUR.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
@@ -534,12 +559,13 @@
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/commercial/SON_CALENDA/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Son Calenda 1</h4>
+                            <h4>Comercial</h4>
                             <p>Son Calenda</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/commercial/SON_CALENDA/01.jpg" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/commercial/SON_CALENDA/01.jpg"
+                                   data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Son Calenda 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio/commercial/CAFE_NUR.html" title="More Details"><i
+                                <a href="portfolio/commercial/SON_CALENDA.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -554,7 +580,8 @@
                             <h4>Comercial</h4>
                             <p>Av Aeropuerto</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/commercial/AEROPUERTO/01.jpeg" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/commercial/AEROPUERTO/01.jpeg"
+                                   data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Av Aeropuerto 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio/commercial/AEROPUERTO.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
@@ -572,13 +599,15 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-investment">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/investment/INV_PROJ/01.JPG" class="img-fluid" alt="">
+                        <img src="assets/img/portfolio/investment/INV_PROJ/01.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Proyectos de Inversi&oacute;n 1</h4>
-                            <p>Proyectos de Inversi&oacute;n</p>
+                            <h4>Inversi&oacute;n Inmobiliaria</h4>
+                            <!--                            <p>Proyectos de Inversi&oacute;n</p>-->
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/investment/INV_PROJ/01.JPG" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Proyectos de Inversi&oacute;n 1"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/portfolio/investment/INV_PROJ/01.jpg"
+                                   data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Proyectos de Inversi&oacute;n 1"><i
+                                        class="bx bx-plus"></i></a>
                                 <a href="portfolio/investment/INVESTMENT.html" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
@@ -1231,6 +1260,237 @@
         </div>
     </section><!-- End Contact Section -->
 
+    <!-- ======= Modals Section ======= -->
+    <section id="modals">
+        <div class="popup" id="pop__const_hab">
+            <div class="popup__content">
+
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-9" style="padding-block: 20px">
+                        <p>
+                            Una casa brinda, seguridad, refugio y un hogar a sus habitantes.
+                            <br>
+                            ¿Puede una casa ofrecer más que esto?
+                            ¡Por supuesto!
+                            <br>
+                            <br>
+                            Puede brindar; comodidad, privacidad, confort y el mejor espacio de convivencia familiar, en
+                            espacios diseñados especialmente para cada uno de los habitantes.
+                            <br>
+                            <br>
+                            Entendemos las necesidades y gustos diferentes. Creamos soluciones y optimizamos los
+                            recursos de
+                            nuestros clientes.
+                            <br>
+                            Diseñamos y construimos su casa con base en sus necesidades, gusto y presupuesto.
+                        </p>
+                        <a href="#services" class="button_modal">Continuar</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="assets/img/modal/01%20Home.jpg" style="max-width: 70%; border-radius: 15px;"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="popup" id="pop__const_dep">
+            <div class="popup__content">
+
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-9" style="padding-block: 20px">
+                        <p>
+                            Sabes cuál es la Inversión más segura?
+                            <br>
+                            Fácil... ¡Construye!
+                            <br>
+                            Las inversiones inmobiliarias son: Resilientes, Inteligentes y Seguras.
+                            <br>
+                            En el futuro, el dinero pierde valor. En cambio, tu inversión inmobiliaria, gana plusvalía.
+                            <br>
+                            Si vendes, tendrás tu ganancia y la recuperación de tu dinero a corto plazo.
+                            <br>
+                            Si rentas, tendrás un ingreso constante y el crecimiento de tu dinero a largo plazo.
+                            <br>
+                            Entendemos las necesidades, gustos y objetivos diferentes. Creamos soluciones y optimizamos
+                            los recursos de nuestros clientes.
+                            <br>
+                            Diseñamos y construimos su proyecto con base en las necesidades, gusto, objetivos y
+                            presupuesto.
+                        </p>
+                        <a href="#services" class="button_modal">Continuar</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="assets/img/modal/02%20Apartment.JPG" style="max-width: 70%; border-radius: 15px;"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="popup" id="pop__renov">
+            <div class="popup__content">
+
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-9" style="padding-block: 20px">
+                        <p>
+                            Una casa brinda, seguridad, refugio y un hogar a sus habitantes.
+                            <br>
+                            ¿Puede una casa ofrecer más que esto?
+                            ¡Por supuesto!
+                            <br>
+                            Puede brindar; comodidad, privacidad, confort y el mejor espacio de convivencia familiar, en
+                            espacios diseñados especialmente para cada uno de los habitantes.
+                            <br>
+                            Entendemos las necesidades y gustos diferentes. Creamos una nueva propuesta con base en las
+                            necesidades. Aprovechamos y reforzamos todos los elementos estructurales que pudieran ser
+                            utilizados en el nuevo proyecto, y optimizamos los recursos de nuestros clientes.
+                            <br>
+                            Diseñamos y renovamos su casa con base en las necesidades, gusto y presupuesto.
+                        </p>
+                        <a href="#services" class="button_modal">Continuar</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="assets/img/modal/03%20Imagesearch%20Roller..jpeg"
+                             style="max-width: 70%; border-radius: 15px;"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="popup" id="pop__cabin">
+            <div class="popup__content">
+
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-9" style="padding-block: 20px">
+                        <p>
+                            La vida en una cabaña es una mezcla de serenidad y aventura.
+                            <br>
+                            ¡Crea recuerdos inolvidables en tu propia cabaña!
+                            <br>
+                            <br>
+                            ¿Buscas una cabaña cómoda, acogedora y moderna para escapar los fines de semana o generar
+                            ingresos a través del alquiler?
+                            <br>
+                            <br>
+                            Invierte en la Tranquilidad con Nuestras Cabañas Premium. Nos especializamos en construir
+                            cabañas personalizadas que reflejan tus gustos y se adaptan a tu estilo de vida.
+                            <br>
+                            <br>
+                            Con diseños cautivadores y materiales de alta calidad, nuestras cabañas atraen a los
+                            huéspedes que buscan vivir experiencias auténticas.
+                            <br>
+                            <br>
+                            ¡Haz que tu inversión trabaje por ti en un entorno natural impresionante!
+                            <br>
+                            Nuestras cabañas premium son ideales para inversores inteligentes que desean entrar en el
+                            mercado de alquiler de cabañas. Entendemos las necesidades, gustos y objetivos diferentes.
+                            Creamos soluciones y optimizamos los recursos de nuestros clientes.
+                            <br>
+                            <br>
+                            Diseñamos y construimos su proyecto con base en las necesidades, gusto, objetivos y
+                            presupuesto.
+                        </p>
+                        <a href="#services" class="button_modal">Continuar</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="assets/img/modal/04%20cabin.jpg"
+                             style="max-width: 70%; border-radius: 15px;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="pop__comm">
+            <div class="popup__content">
+
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-9" style="padding-block: 20px">
+                        <p>
+                            El entorno que ofrece tu establecimiento influye enormemente en cómo tus clientes
+                            perciben tu negocio.
+                            <br>
+                            Entendemos la importancia de crear un ambiente que hable por tu marca. Ya sea que
+                            estés abriendo un nuevo local o renovando uno existente, estamos comprometidos a
+                            diseñar y construir un espacio que no solo impresione, sino que también funcione de
+                            manera eficiente.
+                            <br>
+                            Entendemos las necesidades, gustos y objetivos diferentes. Creamos soluciones y
+                            optimizamos los recursos de nuestros clientes.
+                            <br>
+                            Trabajemos juntos para llevar tu establecimiento al siguiente nivel.
+                            <br>
+                            Diseñamos, construimos y remodelamos establecimientos o negocios con base en las
+                            necesidades, presupuesto, gusto y objetivos de nuestros clientes
+                        </p>
+                        <a href="#services" class="button_modal">Continuar</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="assets/img/modal/05%20Store.jpg"
+                             style="max-width: 70%; border-radius: 15px;"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="popup" id="pop__invest">
+            <div class="popup__content">
+
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-9" style="padding-block: 20px">
+                        <p>
+                            Sabes cuál es la Inversión más segura?
+                            <br>
+                            Fácil... ¡Construye!
+                            <br>
+                            Las inversiones inmobiliarias son: Resilientes, Inteligentes y Seguras.
+                            <br>
+                            En el futuro, el dinero pierde valor. En cambio, tu inversión inmobiliaria, gana
+                            plusvalía.
+                            <br>
+                            Si vendes, tendrás tu ganancia y la recuperación de tu dinero a corto plazo.
+                            <br>
+                            Si rentas, tendrás un ingreso constante y el crecimiento de tu dinero a largo plazo.
+                            <br>
+                            Entendemos las necesidades, gustos y objetivos diferentes. Creamos soluciones y
+                            optimizamos los recursos de nuestros clientes.
+                            <br>
+                            Diseñamos y construimos su proyecto con base en las necesidades, gusto, y objetivos.
+                            <br>
+                            <br>
+                            Proyecto de Inversión Inmobiliaria Individual.
+                            <br>
+                            Podemos diseñar para ti, un Proyecto de Inversión Inmobiliaria a partir de
+                            $12,000,000.00
+                            <br>
+                            Si ya tienes tu terreno y capital, desarrollamos un proyecto de vivienda, turístico
+                            o comercial de acuerdo a las oportunidades y necesidades de la zona.
+                            <br>
+                            Si aún no tienes un terreno pero tienes capital y la decisión de hacer una inversión
+                            inmobiliaria, nosotros localizamos las mejores opciones y ubicaciones para la
+                            adquisición de tu terreno, de acuerdo a tu Proyecto y objetivos.
+                            <br>
+                            Realizamos Estudios de Mercado para conocer las opciones de negocio más rentables y
+                            así garantizar una buena ganancia para ti como inversionista.
+                            <br>
+                            Te asesoramos financiera, técnica, fiscal y legalmente durante todo el proceso de tu
+                            proyecto.
+                            <br>
+                            Tu seguridad es lo más importante, por eso tu dinero siempre lo manejas tú y las
+                            propiedades siempre están a tu nombre.
+                            <br>
+                            ¿Qué te gustaría construir?
+                        </p>
+                        <a href="#services" class="button_modal">Continuar</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="assets/img/modal/06%20Database.jpg"
+                             style="max-width: 70%; border-radius: 15px;"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section><!-- End Modals Section -->
+
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
@@ -1252,9 +1512,12 @@
                         </p>
                         <div class="social-links mt-3">
                             <a href="https://twitter.com/1Especialistas" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="https://www.facebook.com/EspecialistasnConstruccion" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="https://www.instagram.com/especialistas_en_construccion/#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="https://www.youtube.com/channel/UCpc3F3Ken2Q-1cHRZjRGspA" class="google-plus"><i class="bx bxl-youtube"></i></a>
+                            <a href="https://www.facebook.com/EspecialistasnConstruccion" class="facebook"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/especialistas_en_construccion/#" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCpc3F3Ken2Q-1cHRZjRGspA" class="google-plus"><i
+                                    class="bx bxl-youtube"></i></a>
                         </div>
                     </div>
                 </div>
