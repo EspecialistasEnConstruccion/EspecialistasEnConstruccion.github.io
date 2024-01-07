@@ -20,7 +20,7 @@ window.onload = function () {
         // Define options for select2 and update label_accept text based on select1's value
         var options = [];
         if (this.value === 'construcción') {
-            options = ['Casa Habitación', 'Departamentos', 'Remodelación', 'Comercial', 'Cabin', 'Proyectos de Inversión'];
+            options = ['Casa Habitación', 'Departamentos', 'Comercial', 'Cabin', 'Proyectos de Inversión'];
             labelAccept.innerHTML = "Me interesa contratar los servicios de construcción *";
             checkBox.disabled = false;
         } else if (this.value === 'remodelación') {
