@@ -55,8 +55,6 @@ function handleFormSubmit() {
     whatsappMessage += `¿Soy Proveedor?: ${isProveedor?"Sí":"No"}. `;
     whatsappMessage += `Mensaje: ${message}`;
 
-    let answer = prompt()
-
     var encodedMessage = encodeURIComponent(whatsappMessage);
     var whatsappUrl = `https://wa.me/+5215544914411?text=${encodedMessage}`;
 
