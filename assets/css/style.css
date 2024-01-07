@@ -1608,6 +1608,8 @@ section {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .popup:target {
   opacity: 1;
@@ -1627,8 +1629,48 @@ section {
   margin: auto;
   display: block;
 }
+.popup__content_contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
 }
 
+.close {
+  font-size: 60px;
+  color: #ffc451;
+  text-shadow: none;
+  float: right;
+}
+
+.close:hover{
+  color: darkred;
+}
+
+#back_bttn {
+  margin-left: auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 80;
+  font-size: 48px;
+}
+
+#contact_page{
+  background-color: black;
+}
