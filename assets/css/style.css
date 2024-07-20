@@ -1114,6 +1114,29 @@ section {
   opacity: 1;
 }
 
+.fixed-value-logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 10; /* Ensure it stays on top of other elements */
+}
+
+.values-slider {
+  position: relative;
+  z-index: 1; /* Ensure the slides appear behind the fixed image */
+}
+
+.values .swiper-wrapper {
+  padding-top: 120px; /* Adjust based on the size and position of the image */
+}
+
+.values {
+  position: relative;
+}
+
 @media (min-width: 1024px) {
   .values {
     background-attachment: fixed;
@@ -1125,7 +1148,6 @@ section {
     width: 80%;
   }
 }
-
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
