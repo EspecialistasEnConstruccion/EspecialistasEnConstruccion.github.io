@@ -49,7 +49,7 @@ function handleFormSubmit() {
     var message = document.getElementById('message').value;
     var isProveedor = document.getElementById('proveedor').checked;
 
-    var whatsappMessage = `Hola, me interesan tus servivios de ${serviceCategory} - ${serviceName}. `;
+    var whatsappMessage = `Hola, me interesan tus servicios de ${serviceCategory} - ${serviceName}. `;
     whatsappMessage += `Mi nombre es ${name}. `;
     whatsappMessage += `Contacto: ${email}, ${phone}. `;
     whatsappMessage += `¿Soy Proveedor?: ${isProveedor?"Sí":"No"}. `;
